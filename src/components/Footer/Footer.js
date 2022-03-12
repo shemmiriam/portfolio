@@ -21,7 +21,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>&copy; 2021 <Link href="https://www.vipuljha.com">  Shem Miriam</Link> . All rights reserved.</Slogan>
+          <Slogan>&copy; 2021 <Link href="https://github.com/shemmiriam">  Shem Miriam</Link> . All rights reserved.</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/lordarcadius">
