@@ -27,13 +27,13 @@ const Footer = () => {
           <SocialIcons href="https://github.com/shemmiriam">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/lordarcadius/">
+          <SocialIcons href="https://www.linkedin.com/in/miriam-shem-97a818196/">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.instagram.com/lordarcadius">
+          <SocialIcons href="https://www.instagram.com/miriam.shem.1/">
             <AiFillInstagram size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.twitter.com/lordarcadius">
+          <SocialIcons href="https://twitter.com/MiriamShem">
             <AiFillTwitterCircle size="3rem" />
           </SocialIcons>
         </SocialContainer>
