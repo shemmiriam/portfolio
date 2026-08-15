@@ -1,12 +1,13 @@
 [build]
-  command   = "npm run build:static"
-  publish   = "out"
+  command = "NODE_OPTIONS=--openssl-legacy-provider npm run build:static"
+  publish = "out"
 
 [build.environment]
-  NODE_VERSION = "18"
-  NODE_OPTIONS = "--openssl-legacy-provider"
+  NODE_VERSION     = "18"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  NEXT_TELEMETRY_DISABLED  = "1"
 
-# SPA-style fallback so /cv and other pages route correctly on static hosting
+# SPA fallback — routes like /cv resolve to the static export
 [[redirects]]
   from   = "/*"
   to     = "/index.html"
