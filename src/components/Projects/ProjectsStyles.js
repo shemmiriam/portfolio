@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 
-export const Img = styled.img`
-  width:100%;
-  height:100%;
-  object-fit: cover;
+export const ImgWrap = styled.div`
+  width: 100%;
+  height: 220px;
   overflow: hidden;
+  border-radius: 10px 10px 0 0;
+`
+
+export const Img = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `
 
 export const GridContainer = styled.section`
@@ -109,11 +115,19 @@ transition: 0.5s;
 `;
 
 export const TagList = styled.ul`
-display: flex;
-justify-content: space-around;
-padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem 1.5rem 1.5rem;
+  list-style: none;
 `
 export const Tag = styled.li`
-color: #d8bfbf;
-font-size: 1.5rem;
+  color: #d8bfbf;
+  font-size: 1.1rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 0.2rem 0.7rem;
+  white-space: nowrap;
 `

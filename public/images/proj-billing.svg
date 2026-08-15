@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00150f"/>
+      <stop offset="100%" style="stop-color:#001f17"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Invoice card -->
+  <rect x="80" y="80" width="300" height="290" rx="8" fill="#001a12" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="80" y="80" width="300" height="50" rx="8" fill="#10b981" opacity="0.15"/>
+  <text x="230" y="110" text-anchor="middle" fill="#10b981" font-size="14" font-weight="bold" font-family="sans-serif">INVOICE #INV-2025-0847</text>
+  <line x1="100" y1="150" x2="360" y2="150" stroke="#10b981" stroke-width="1" opacity="0.2"/>
+  <text x="100" y="175" fill="#10b981" font-size="11" font-family="sans-serif" opacity="0.7">Customer Portal</text>
+  <text x="100" y="193" fill="white" font-size="12" font-family="sans-serif">Enterprise Client Ltd.</text>
+  <text x="100" y="225" fill="#10b981" font-size="11" font-family="sans-serif" opacity="0.6">Subscription — Pro Plan</text>
+  <text x="320" y="225" text-anchor="end" fill="white" font-size="12" font-family="sans-serif">KES 48,000</text>
+  <text x="100" y="250" fill="#10b981" font-size="11" font-family="sans-serif" opacity="0.6">API Usage (10k calls)</text>
+  <text x="320" y="250" text-anchor="end" fill="white" font-size="12" font-family="sans-serif">KES 12,000</text>
+  <line x1="100" y1="270" x2="360" y2="270" stroke="#10b981" stroke-width="1" opacity="0.3"/>
+  <text x="100" y="292" fill="#10b981" font-size="13" font-weight="bold" font-family="sans-serif">Total</text>
+  <text x="320" y="292" text-anchor="end" fill="#10b981" font-size="15" font-weight="bold" font-family="sans-serif">KES 60,000</text>
+  <rect x="120" y="315" width="160" height="32" rx="6" fill="#10b981" opacity="0.9"/>
+  <text x="200" y="336" text-anchor="middle" fill="white" font-size="13" font-weight="bold" font-family="sans-serif">Pay Now</text>
+  <!-- Spring Boot badge -->
+  <rect x="440" y="120" width="280" height="220" rx="8" fill="#001a12" stroke="#10b981" stroke-width="1" opacity="0.7"/>
+  <text x="580" y="150" text-anchor="middle" fill="#10b981" font-size="13" font-family="monospace" opacity="0.8">Spring Boot API</text>
+  <text x="460" y="180" fill="#34d399" font-size="11" font-family="monospace">POST /portal/register</text>
+  <text x="460" y="200" fill="#6ee7b7" font-size="10" font-family="monospace" opacity="0.7">→ PortalRegistrationResponse</text>
+  <text x="460" y="225" fill="#34d399" font-size="11" font-family="monospace">GET /portal/customers</text>
+  <text x="460" y="245" fill="#6ee7b7" font-size="10" font-family="monospace" opacity="0.7">→ enforce UNIQUE constraint</text>
+  <text x="460" y="270" fill="#34d399" font-size="11" font-family="monospace">POST /auth/login</text>
+  <text x="460" y="290" fill="#6ee7b7" font-size="10" font-family="monospace" opacity="0.7">→ email/phone · JWT token</text>
+  <!-- Footer -->
+  <rect x="0" y="390" width="800" height="60" fill="#00150f" opacity="0.9"/>
+  <text x="40" y="422" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">Azui Billing System</text>
+  <text x="40" y="442" fill="#10b981" font-size="12" font-family="sans-serif">Java · Spring Boot · TypeScript · PostgreSQL · REST APIs</text>
+  <rect x="670" y="400" width="90" height="24" rx="4" fill="#10b981" opacity="0.2"/>
+  <text x="715" y="416" text-anchor="middle" fill="#10b981" font-size="11" font-family="sans-serif">Production</text>
+</svg>

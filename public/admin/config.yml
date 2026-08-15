@@ -1,0 +1,202 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+# ─── COLLECTIONS ────────────────────────────────────────────────────────────
+
+collections:
+
+  # ── 1. PERSONAL INFO & HERO ────────────────────────────────────────────────
+  - name: "settings"
+    label: "⚙️ Personal Info & Hero"
+    files:
+      - label: "Personal Info & Hero Text"
+        name: "personal"
+        file: "content/personal.json"
+        fields:
+          - { label: "Full Name", name: "name", widget: "string" }
+          - { label: "Professional Title (shown under name)", name: "title", widget: "string" }
+          - { label: "Tagline (1 sentence)", name: "tagline", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Email Address", name: "email", widget: "string" }
+          - { label: "GitHub URL", name: "github", widget: "string" }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+          - { label: "Instagram URL (2nd)", name: "instagram2", widget: "string", required: false }
+          - { label: "Instagram URL", name: "instagram", widget: "string" }
+          - { label: "Resume/CV File Path", name: "resumeUrl", widget: "string", default: "/files/resume.pdf" }
+          - { label: "Hero Greeting", name: "heroGreeting", widget: "string" }
+          - { label: "Hero Headline", name: "heroHeadline", widget: "string" }
+          - label: "Hero Description"
+            name: "heroDescription"
+            widget: "text"
+            hint: "2-3 sentences shown on the homepage hero."
+
+  # ── 2. PROJECTS ────────────────────────────────────────────────────────────
+  - name: "projects_collection"
+    label: "🚀 Projects"
+    files:
+      - label: "All Projects"
+        name: "projects"
+        file: "content/projects.json"
+        fields:
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Project Title", name: "title", widget: "string" }
+              - label: "Description"
+                name: "description"
+                widget: "text"
+                hint: "2-4 sentences. Be specific about your contribution, not just the project."
+              - label: "Cover Image"
+                name: "image"
+                widget: "image"
+                required: false
+                default: "/images/proj-generic.svg"
+              - label: "Technologies / Tags"
+                name: "tags"
+                widget: "list"
+                hint: "Comma-separated — e.g. Python, Django, REST APIs"
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - "AI / Integrations"
+                  - "AI / ML"
+                  - "Systems & Integrations"
+                  - "Digital Public Infrastructure"
+                  - "Software Engineering"
+                  - "Product / UX"
+                  - "Personal Project"
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options:
+                  - "Production"
+                  - "In Development"
+                  - "Prototype"
+                  - "Concept"
+                  - "Completed"
+              - { label: "Organization / Context", name: "organization", widget: "string" }
+              - label: "Source Code URL"
+                name: "source"
+                widget: "string"
+                default: "#"
+                hint: "GitHub link, or # if confidential"
+              - label: "Live / Demo URL"
+                name: "visit"
+                widget: "string"
+                default: "#"
+              - label: "Highlight on homepage?"
+                name: "highlight"
+                widget: "boolean"
+                default: false
+                hint: "Featured projects appear more prominently"
+              - { label: "ID (unique number)", name: "id", widget: "number" }
+
+  # ── 3. EXPERIENCE ──────────────────────────────────────────────────────────
+  - name: "experience_collection"
+    label: "💼 Work Experience"
+    files:
+      - label: "Work Experience"
+        name: "experience"
+        file: "content/experience.json"
+        fields:
+          - label: "Experience"
+            name: "experience"
+            widget: "list"
+            summary: "{{fields.role}} @ {{fields.company}}"
+            fields:
+              - { label: "Job Title / Role", name: "role", widget: "string" }
+              - { label: "Company Name", name: "company", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Period (e.g. 2022 — Present)", name: "period", widget: "string" }
+              - label: "Role Description"
+                name: "description"
+                widget: "text"
+                hint: "2-4 sentences summarising what you did and why it matters."
+              - label: "Key Highlights"
+                name: "highlights"
+                widget: "list"
+                hint: "One bullet per highlight — specific achievements, integrations, clients, etc."
+              - label: "Technologies Used"
+                name: "tags"
+                widget: "list"
+              - { label: "ID (unique number)", name: "id", widget: "number" }
+
+  # ── 4. CERTIFICATIONS ──────────────────────────────────────────────────────
+  - name: "certifications_collection"
+    label: "🎓 Certifications & Learning"
+    files:
+      - label: "Certifications & Courses"
+        name: "certifications"
+        file: "content/certifications.json"
+        fields:
+          - label: "Certifications"
+            name: "certifications"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.status}}"
+            fields:
+              - { label: "Certification / Course Name", name: "name", widget: "string" }
+              - { label: "Provider (e.g. University of Virginia)", name: "provider", widget: "string" }
+              - { label: "Platform (e.g. Coursera, edX, LinkedIn Learning)", name: "platform", widget: "string" }
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options:
+                  - "Completed"
+                  - "In Progress"
+                  - "Planned"
+              - label: "Completion Date"
+                name: "completionDate"
+                widget: "string"
+                required: false
+                hint: "e.g. March 2025 — only fill once completed"
+              - label: "Credential URL"
+                name: "credentialUrl"
+                widget: "string"
+                required: false
+                hint: "Link to certificate — only fill once completed"
+              - label: "Skills Gained"
+                name: "skills"
+                widget: "list"
+              - { label: "ID (unique number)", name: "id", widget: "number" }
+
+  # ── 5. CAREER TIMELINE ─────────────────────────────────────────────────────
+  - name: "timeline_collection"
+    label: "📅 Career Timeline"
+    files:
+      - label: "Career Timeline"
+        name: "timeline"
+        file: "content/timeline.json"
+        fields:
+          - label: "Timeline Entries"
+            name: "timeline"
+            widget: "list"
+            summary: "{{fields.year}} — {{fields.text}}"
+            fields:
+              - { label: "Year", name: "year", widget: "number" }
+              - label: "Description"
+                name: "text"
+                widget: "text"
+                hint: "1-2 sentences describing this milestone in your career."
+
+  # ── 6. ACCOMPLISHMENTS ─────────────────────────────────────────────────────
+  - name: "accomplishments_collection"
+    label: "📊 By the Numbers"
+    files:
+      - label: "Accomplishment Stats"
+        name: "accomplishments"
+        file: "content/accomplishments.json"
+        fields:
+          - label: "Stats"
+            name: "accomplishments"
+            widget: "list"
+            summary: "{{fields.number}}+ {{fields.text}}"
+            fields:
+              - { label: "Number", name: "number", widget: "number" }
+              - { label: "Label", name: "text", widget: "string", hint: "e.g. Countries Deployed" }

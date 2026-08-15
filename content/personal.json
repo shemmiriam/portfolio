@@ -1,0 +1,14 @@
+{
+  "name": "Miriam Shem",
+  "title": "Software Engineer | AI Solutions Engineer | Digital Public Infrastructure",
+  "tagline": "I build technology that connects software engineering, AI, and real-world impact.",
+  "location": "Nairobi, Kenya",
+  "email": "shemmiriam93@gmail.com",
+  "github": "https://github.com/shemmiriam",
+  "linkedin": "https://www.linkedin.com/in/miriam-shem",
+  "instagram": "https://www.instagram.com/miriam.shem.1/",
+  "resumeUrl": "/files/resume.pdf",
+  "heroGreeting": "Hi, I'm Miriam Shem",
+  "heroHeadline": "Software Engineer · AI Solutions · Digital Public Infrastructure",
+  "heroDescription": "I'm a Software Engineer with experience building real-world technology — from a production containerized AI pipeline (Whisper, FastAPI, Celery, Docker) for child protection organizations, to enterprise integrations with government institutions across East Africa. My work sits at the intersection of software engineering, AI solutions, and technology for social impact."
+}

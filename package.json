@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
+    "build:static": "npm run build && npm run export",
+    "export": "next export",
     "start": "next start"
   },
   "dependencies": {
@@ -16,7 +18,11 @@
     "styled-components": "^5.3.0",
     "styled-normalize": "^8.0.7"
   },
+  "engines": {
+    "node": ">=18.0.0 <21.0.0"
+  },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.13.3",
     "next-optimized-images": "^2.6.2"
   }
 }

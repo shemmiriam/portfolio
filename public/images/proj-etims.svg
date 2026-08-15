@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-etims" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1109"/>
+      <stop offset="100%" style="stop-color:#131a0e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-etims)"/>
+  <!-- KRA shield/logo hint -->
+  <polygon points="400,55 450,90 450,145 400,175 350,145 350,90" fill="#132108" stroke="#84cc16" stroke-width="2" opacity="0.9"/>
+  <text x="400" y="110" text-anchor="middle" fill="#84cc16" font-size="13" font-weight="bold" font-family="sans-serif">KRA</text>
+  <text x="400" y="130" text-anchor="middle" fill="#84cc16" font-size="10" font-family="sans-serif" opacity="0.75">eTIMS</text>
+  <text x="400" y="148" text-anchor="middle" fill="#84cc16" font-size="8" font-family="sans-serif" opacity="0.5">Kenya Revenue</text>
+  <!-- ERP left node -->
+  <rect x="55" y="185" width="175" height="90" rx="8" fill="#0e1a0a" stroke="#84cc16" stroke-width="1.5"/>
+  <text x="142" y="215" text-anchor="middle" fill="#a3e635" font-size="13" font-weight="bold" font-family="sans-serif">Ruel ERP</text>
+  <text x="142" y="233" text-anchor="middle" fill="#84cc16" font-size="10" font-family="sans-serif" opacity="0.7">Enterprise Platform</text>
+  <text x="142" y="251" text-anchor="middle" fill="#84cc16" font-size="9" font-family="sans-serif" opacity="0.5">700+ Client Orgs</text>
+  <text x="142" y="267" text-anchor="middle" fill="#84cc16" font-size="9" font-family="sans-serif" opacity="0.4">8 Industry Sectors</text>
+  <!-- API middle bridge -->
+  <rect x="305" y="200" width="190" height="70" rx="8" fill="#0e1a0a" stroke="#84cc16" stroke-width="1.5"/>
+  <text x="400" y="226" text-anchor="middle" fill="#a3e635" font-size="12" font-weight="bold" font-family="monospace">REST API</text>
+  <text x="400" y="244" text-anchor="middle" fill="#84cc16" font-size="10" font-family="monospace" opacity="0.7">Integration Layer</text>
+  <text x="400" y="260" text-anchor="middle" fill="#84cc16" font-size="9" font-family="monospace" opacity="0.5">JSON · OAuth2 · TLS</text>
+  <!-- eTIMS right node -->
+  <rect x="570" y="185" width="175" height="90" rx="8" fill="#0e1a0a" stroke="#84cc16" stroke-width="1.5"/>
+  <text x="657" y="215" text-anchor="middle" fill="#a3e635" font-size="13" font-weight="bold" font-family="sans-serif">KRA eTIMS</text>
+  <text x="657" y="233" text-anchor="middle" fill="#84cc16" font-size="10" font-family="sans-serif" opacity="0.7">Tax Invoice Mgmt</text>
+  <text x="657" y="251" text-anchor="middle" fill="#84cc16" font-size="9" font-family="sans-serif" opacity="0.5">Compliance Portal</text>
+  <text x="657" y="267" text-anchor="middle" fill="#84cc16" font-size="9" font-family="sans-serif" opacity="0.4">Kenya Revenue Authority</text>
+  <!-- Connecting arrows -->
+  <line x1="230" y1="230" x2="305" y2="230" stroke="#84cc16" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.6"/>
+  <polygon points="300,224 318,230 300,236" fill="#84cc16" opacity="0.7"/>
+  <line x1="495" y1="230" x2="570" y2="230" stroke="#84cc16" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.6"/>
+  <polygon points="565,224 583,230 565,236" fill="#84cc16" opacity="0.7"/>
+  <!-- Line from shield down to bridge -->
+  <line x1="400" y1="175" x2="400" y2="200" stroke="#84cc16" stroke-width="1.5" opacity="0.4"/>
+  <!-- Impact stats -->
+  <rect x="130" y="315" width="140" height="40" rx="6" fill="rgba(132,204,22,0.1)" stroke="#84cc16" stroke-width="1"/>
+  <text x="200" y="332" text-anchor="middle" fill="#a3e635" font-size="13" font-weight="bold" font-family="sans-serif">700+</text>
+  <text x="200" y="348" text-anchor="middle" fill="#84cc16" font-size="9" font-family="sans-serif" opacity="0.7">Enterprise Clients</text>
+  <rect x="330" y="315" width="140" height="40" rx="6" fill="rgba(132,204,22,0.1)" stroke="#84cc16" stroke-width="1"/>
+  <text x="400" y="332" text-anchor="middle" fill="#a3e635" font-size="13" font-weight="bold" font-family="sans-serif">8</text>
+  <text x="400" y="348" text-anchor="middle" fill="#84cc16" font-size="9" font-family="sans-serif" opacity="0.7">Industry Sectors</text>
+  <rect x="530" y="315" width="140" height="40" rx="6" fill="rgba(132,204,22,0.1)" stroke="#84cc16" stroke-width="1"/>
+  <text x="600" y="332" text-anchor="middle" fill="#a3e635" font-size="13" font-weight="bold" font-family="sans-serif">Tax</text>
+  <text x="600" y="348" text-anchor="middle" fill="#84cc16" font-size="9" font-family="sans-serif" opacity="0.7">VAT Compliance</text>
+  <!-- Footer -->
+  <rect x="0" y="390" width="800" height="60" fill="#080d06" opacity="0.96"/>
+  <text x="40" y="418" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">KRA eTIMS Integration</text>
+  <text x="40" y="440" fill="#84cc16" font-size="12" font-family="sans-serif">REST APIs · Enterprise ERP · Kenya Revenue Authority · Tax Compliance · Ruel Software</text>
+  <rect x="660" y="400" width="100" height="24" rx="4" fill="#84cc16" opacity="0.15"/>
+  <text x="710" y="416" text-anchor="middle" fill="#84cc16" font-size="11" font-family="sans-serif">Production</text>
+</svg>

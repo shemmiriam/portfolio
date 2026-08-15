@@ -1,0 +1,14 @@
+[build]
+  command = "NODE_OPTIONS=--openssl-legacy-provider npm run build:static"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION     = "18"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  NEXT_TELEMETRY_DISABLED  = "1"
+
+# SPA fallback — routes like /cv resolve to the static export
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200

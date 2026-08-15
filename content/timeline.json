@@ -1,0 +1,24 @@
+{
+  "timeline": [
+    {
+      "year": 2019,
+      "text": "Started BSc Computer Science at Kabarak University, Nakuru, Kenya — built a foundation in algorithms, systems, data structures, and software engineering. Early projects included CPIMS codebase upgrade (Python 2.7/Django 1.8 → Python 3.10/Django 4.0) and NLP/AI exploration."
+    },
+    {
+      "year": 2023,
+      "text": "Joined Ruel Software as Software Support & Implementation Specialist Intern — first professional role supporting Ruel Enterprise ERP deployment across 700+ client organizations. Progressed to full-time Software Engineer, delivering KRA eTIMS government compliance integration."
+    },
+    {
+      "year": 2024,
+      "text": "Completed role at Ruel Software. Deepened AI and systems integration skills — ASR research, NLP pipelines, and preparation for production AI engineering work."
+    },
+    {
+      "year": 2025,
+      "text": "Joined BITZ IT Consulting Ltd. as Software Engineer — working on OpenCHS AI platform across East Africa. Built a production containerized AI pipeline (Whisper, translation, NLP, FastAPI, Celery, Docker) for child protection organizations."
+    },
+    {
+      "year": 2026,
+      "text": "Advancing toward AI product leadership — building AI-enabled products, contributing to Digital Public Infrastructure initiatives, and growing toward AI Product Management and technology leadership."
+    }
+  ]
+}

@@ -1,26 +1,33 @@
 import React from 'react';
-
-import { Section, SectionText, SectionTitle, Link } from '../../styles/GlobalComponents';
+import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import { HeroWrapper, ProfileSide, AvatarRing, AvatarImg, TextSide } from './HeroStyles';
+import { heroData, personalInfo } from '../../constants/constants';
 
-const Hero = (props) => (
-  <>
-    <Section row nopadding>
-      <LeftSection>
-        <SectionTitle main center>
-          Hey there,
+const Hero = () => (
+  <Section row nopadding>
+    <HeroWrapper>
+      <ProfileSide>
+        <AvatarRing>
+          <AvatarImg src="/images/miriam-profile.png" alt={personalInfo.name} />
+        </AvatarRing>
+      </ProfileSide>
+      <TextSide>
+        <SectionTitle main>
+          {heroData.greeting}
         </SectionTitle>
         <SectionText>
-          Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts.
+          {heroData.description}
         </SectionText>
         <Button onClick={(e) => {
           e.preventDefault();
-          window.location.href = '/files/resume.pdf';
-        }}>My Resume</Button>
-      </LeftSection>
-    </Section>
-  </>
+          window.location.href = '/cv';
+        }}>
+          {heroData.ctaSecondary}
+        </Button>
+      </TextSide>
+    </HeroWrapper>
+  </Section>
 );
 
 export default Hero;
