@@ -1,0 +1,13 @@
+[build]
+  command   = "npm run build:static"
+  publish   = "out"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NODE_OPTIONS = "--openssl-legacy-provider"
+
+# SPA-style fallback so /cv and other pages route correctly on static hosting
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
