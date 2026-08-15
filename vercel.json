@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": null,
-  "buildCommand": "NODE_OPTIONS=--openssl-legacy-provider npm run build:static",
+  "buildCommand": "npm run build:static",
   "outputDirectory": "out",
   "installCommand": "npm install"
 }
