@@ -22,6 +22,8 @@ export const LinkItem = styled.a`
 	transition: .3s ease;
 	position: relative;
 	left: 0;
+	word-break: break-word;
+	overflow-wrap: anywhere;
 
 	&:hover {
 		color: #fff;
@@ -116,7 +118,7 @@ export const SocialContainer = styled.div`
 export const LinkList = styled.ul`
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: grid;
-	grid-template-columns: repeat(3, minmax(85px, 220px));
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	gap: 40px;
   padding: 40px 0 28px;
 
@@ -130,17 +132,19 @@ export const LinkList = styled.ul`
 		gap: 16px;
 	}
 	@media ${props => props.theme.breakpoints.sm} {
+		grid-template-columns: 1fr;
 		width: 100%;
 		padding: 32px 4px 16px;
-		gap: 5px;
+		gap: 20px;
 	}
 `
 
 export const LinkColumn = styled.div`
 	display: flex;
 	flex-direction: column;
-	max-width: 220px;
+	max-width: 100%;
 	width: 100%;
+	min-width: 0;
 `
 export const LinkTitle = styled.h4`
 	font-style: normal;

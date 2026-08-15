@@ -289,7 +289,7 @@ export default function CV() {
           <li><strong>Uganda Ministry of Gender Integration:</strong> Django-based backend integration with the Uganda MGLSD gateway for child protection data exchange.</li>
           <li><strong>Kenya CPIMS Integration:</strong> Interoperability integration between OpenCHS and Kenya's national child protection registry (CPIMS).</li>
           <li><strong>Tanzania AI Capabilities:</strong> Speech-to-text (Whisper), translation (NLLB), summarization (FLAN-T5/Mistral) and classification for AI-enabled case processing.</li>
-          <li><strong>D-HEIGHT DPI Initiative:</strong> Digital Public Infrastructure initiative covering housing, financial inclusion, WASH, and responsible AI. (<a href="https://github.com/BITZ-IT-Consulting-LTD/D-HEIGHT" target="_blank" rel="noopener noreferrer">GitHub</a>)</li>
+          <li><strong>D-HEIGHT DPI Initiative:</strong> Digital Public Infrastructure initiative covering housing, financial inclusion, WASH, and responsible AI. Confidential — research &amp; design phase.</li>
           <li><strong>KRA eTIMS Integration (Ruel Software):</strong> Enterprise ERP integration with Kenya Revenue Authority for tax invoice compliance.</li>
         </Ul>
       </Page>
