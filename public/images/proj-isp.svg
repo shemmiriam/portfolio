@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-isp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d1a"/>
+      <stop offset="100%" style="stop-color:#131326"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-isp)"/>
+  <!-- Network tower -->
+  <line x1="400" y1="55" x2="372" y2="165" stroke="#a78bfa" stroke-width="2.5" opacity="0.9"/>
+  <line x1="400" y1="55" x2="428" y2="165" stroke="#a78bfa" stroke-width="2.5" opacity="0.9"/>
+  <line x1="372" y1="165" x2="428" y2="165" stroke="#a78bfa" stroke-width="2" opacity="0.9"/>
+  <line x1="400" y1="55" x2="400" y2="165" stroke="#a78bfa" stroke-width="1.5" opacity="0.45"/>
+  <!-- Signal arcs -->
+  <path d="M348 88 Q400 36 452 88" fill="none" stroke="#a78bfa" stroke-width="2" opacity="0.6"/>
+  <path d="M320 112 Q400 36 480 112" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.35"/>
+  <!-- Module boxes -->
+  <rect x="60" y="210" width="135" height="72" rx="8" fill="rgba(167,139,250,0.08)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="127" y="242" text-anchor="middle" fill="#c4b5fd" font-size="12" font-weight="bold" font-family="sans-serif">Subscribers</text>
+  <text x="127" y="260" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="sans-serif">Management</text>
+  <text x="127" y="275" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="sans-serif" opacity="0.55">Plans · Billing</text>
+  <rect x="220" y="210" width="135" height="72" rx="8" fill="rgba(167,139,250,0.08)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="287" y="242" text-anchor="middle" fill="#c4b5fd" font-size="12" font-weight="bold" font-family="sans-serif">Bandwidth</text>
+  <text x="287" y="260" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="sans-serif">Allocation</text>
+  <text x="287" y="275" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="sans-serif" opacity="0.55">QoS · Throttle</text>
+  <rect x="445" y="210" width="135" height="72" rx="8" fill="rgba(167,139,250,0.08)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="512" y="242" text-anchor="middle" fill="#c4b5fd" font-size="12" font-weight="bold" font-family="sans-serif">Invoicing</text>
+  <text x="512" y="260" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="sans-serif">Billing Cycles</text>
+  <text x="512" y="275" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="sans-serif" opacity="0.55">Auto-generate</text>
+  <rect x="605" y="210" width="135" height="72" rx="8" fill="rgba(167,139,250,0.08)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="672" y="242" text-anchor="middle" fill="#c4b5fd" font-size="12" font-weight="bold" font-family="sans-serif">Monitoring</text>
+  <text x="672" y="260" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="sans-serif">Network Health</text>
+  <text x="672" y="275" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="sans-serif" opacity="0.55">Uptime · Alerts</text>
+  <!-- Lines tower → boxes -->
+  <line x1="400" y1="165" x2="127" y2="210" stroke="#a78bfa" stroke-width="1" opacity="0.3"/>
+  <line x1="400" y1="165" x2="287" y2="210" stroke="#a78bfa" stroke-width="1" opacity="0.3"/>
+  <line x1="400" y1="165" x2="512" y2="210" stroke="#a78bfa" stroke-width="1" opacity="0.3"/>
+  <line x1="400" y1="165" x2="672" y2="210" stroke="#a78bfa" stroke-width="1" opacity="0.3"/>
+  <!-- Stack badges -->
+  <rect x="218" y="320" width="90" height="26" rx="5" fill="rgba(167,139,250,0.12)" stroke="#a78bfa" stroke-width="1"/>
+  <text x="263" y="337" text-anchor="middle" fill="#c4b5fd" font-size="12" font-family="sans-serif">Django</text>
+  <rect x="323" y="320" width="90" height="26" rx="5" fill="rgba(167,139,250,0.12)" stroke="#a78bfa" stroke-width="1"/>
+  <text x="368" y="337" text-anchor="middle" fill="#c4b5fd" font-size="12" font-family="sans-serif">Next.js</text>
+  <rect x="428" y="320" width="105" height="26" rx="5" fill="rgba(167,139,250,0.12)" stroke="#a78bfa" stroke-width="1"/>
+  <text x="480" y="337" text-anchor="middle" fill="#c4b5fd" font-size="12" font-family="sans-serif">TypeScript</text>
+  <!-- Footer -->
+  <rect x="0" y="390" width="800" height="60" fill="#09091a" opacity="0.96"/>
+  <text x="40" y="418" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">ISP Management System</text>
+  <text x="40" y="440" fill="#a78bfa" font-size="12" font-family="sans-serif">Django · Python · Next.js · TypeScript · REST APIs</text>
+  <rect x="640" y="400" width="120" height="24" rx="4" fill="#a78bfa" opacity="0.18"/>
+  <text x="700" y="416" text-anchor="middle" fill="#a78bfa" font-size="11" font-family="sans-serif">In Development</text>
+</svg>

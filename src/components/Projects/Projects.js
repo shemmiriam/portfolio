@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
+import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img, ImgWrap } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
@@ -12,7 +12,9 @@ const Projects = () => (
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
-            <Img src={p.image} />
+            <ImgWrap>
+              <Img src={p.image} alt={p.title} />
+            </ImgWrap>
 
             <HeaderThree title={p.title}>{p.title}</HeaderThree>
             <Hr />
@@ -28,8 +30,14 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={p.visit}>Live Preview</ExternalLinks>
-              <ExternalLinks href={p.source}>Source Code</ExternalLinks>
+              {p.visit && p.visit !== '#' && (
+                <ExternalLinks href={p.visit} target="_blank" rel="noopener noreferrer">Live Preview</ExternalLinks>
+              )}
+              {p.source && p.source !== '#' ? (
+                <ExternalLinks href={p.source} target="_blank" rel="noopener noreferrer">Source Code</ExternalLinks>
+              ) : (
+                <span style={{color: '#888', fontSize: '1.4rem', padding: '0.6rem 1rem', border: '1px solid #444', borderRadius: '15px'}}>Confidential</span>
+              )}
             </UtilityList>
           </BlogCard>
         );

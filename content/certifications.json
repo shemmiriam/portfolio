@@ -1,0 +1,24 @@
+{
+  "certifications": [
+    {
+      "id": 0,
+      "name": "Digital Product Management: Modern Fundamentals",
+      "provider": "University of Virginia (Darden School of Business)",
+      "platform": "Coursera",
+      "status": "In Progress",
+      "completionDate": "",
+      "credentialUrl": "",
+      "skills": ["Product Management", "Product Strategy", "Agile", "User Research"]
+    },
+    {
+      "id": 1,
+      "name": "AI Product Management Specialization",
+      "provider": "Duke University",
+      "platform": "Coursera",
+      "status": "Planned",
+      "completionDate": "",
+      "credentialUrl": "",
+      "skills": ["AI Product Management", "ML for Products", "AI Strategy"]
+    }
+  ]
+}

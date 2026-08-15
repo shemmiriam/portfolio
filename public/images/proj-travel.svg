@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a00"/>
+      <stop offset="100%" style="stop-color:#2d1200"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Dashboard mockup -->
+  <rect x="60" y="80" width="680" height="290" rx="10" fill="#1f1000" stroke="#f59e0b" stroke-width="1" opacity="0.8"/>
+  <!-- Header bar -->
+  <rect x="60" y="80" width="680" height="40" rx="10" fill="#f59e0b" opacity="0.15"/>
+  <text x="80" y="105" fill="#f59e0b" font-size="13" font-family="sans-serif" font-weight="bold">Travel Management — Corporate Portal</text>
+  <!-- Stat cards -->
+  <rect x="80" y="140" width="140" height="70" rx="6" fill="#2a1500" stroke="#f59e0b" stroke-width="1" opacity="0.7"/>
+  <text x="150" y="165" text-anchor="middle" fill="#f59e0b" font-size="22" font-weight="bold" font-family="sans-serif">24</text>
+  <text x="150" y="183" text-anchor="middle" fill="#f59e0b" font-size="10" font-family="sans-serif" opacity="0.7">Active Requests</text>
+  <rect x="240" y="140" width="140" height="70" rx="6" fill="#2a1500" stroke="#f59e0b" stroke-width="1" opacity="0.7"/>
+  <text x="310" y="165" text-anchor="middle" fill="#fbbf24" font-size="22" font-weight="bold" font-family="sans-serif">KES 1.2M</text>
+  <text x="310" y="183" text-anchor="middle" fill="#f59e0b" font-size="10" font-family="sans-serif" opacity="0.7">Travel Advances</text>
+  <rect x="400" y="140" width="140" height="70" rx="6" fill="#2a1500" stroke="#f59e0b" stroke-width="1" opacity="0.7"/>
+  <text x="470" y="165" text-anchor="middle" fill="#fbbf24" font-size="22" font-weight="bold" font-family="sans-serif">18</text>
+  <text x="470" y="183" text-anchor="middle" fill="#f59e0b" font-size="10" font-family="sans-serif" opacity="0.7">Pending Reports</text>
+  <rect x="560" y="140" width="140" height="70" rx="6" fill="#2a1500" stroke="#f59e0b" stroke-width="1" opacity="0.7"/>
+  <text x="630" y="165" text-anchor="middle" fill="#fbbf24" font-size="22" font-weight="bold" font-family="sans-serif">6</text>
+  <text x="630" y="183" text-anchor="middle" fill="#f59e0b" font-size="10" font-family="sans-serif" opacity="0.7">Departments</text>
+  <!-- Table rows -->
+  <rect x="80" y="230" width="620" height="1" fill="#f59e0b" opacity="0.2"/>
+  <text x="90" y="257" fill="#f59e0b" font-size="11" font-family="sans-serif" opacity="0.8">Nairobi → Mombasa</text>
+  <text x="330" y="257" fill="#fbbf24" font-size="11" font-family="sans-serif">KES 45,000</text>
+  <text x="500" y="257" fill="#34d399" font-size="11" font-family="sans-serif">Approved</text>
+  <rect x="80" y="265" width="620" height="1" fill="#f59e0b" opacity="0.1"/>
+  <text x="90" y="287" fill="#f59e0b" font-size="11" font-family="sans-serif" opacity="0.6">Kampala Trip — Q3</text>
+  <text x="330" y="287" fill="#fbbf24" font-size="11" font-family="sans-serif">KES 120,000</text>
+  <text x="500" y="287" fill="#f59e0b" font-size="11" font-family="sans-serif">Pending</text>
+  <rect x="80" y="295" width="620" height="1" fill="#f59e0b" opacity="0.1"/>
+  <text x="90" y="317" fill="#f59e0b" font-size="11" font-family="sans-serif" opacity="0.5">Dar es Salaam Conference</text>
+  <text x="330" y="317" fill="#fbbf24" font-size="11" font-family="sans-serif">KES 280,000</text>
+  <text x="500" y="317" fill="#f87171" font-size="11" font-family="sans-serif">Review</text>
+  <!-- Footer -->
+  <rect x="0" y="390" width="800" height="60" fill="#1a0a00" opacity="0.9"/>
+  <text x="40" y="422" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">Travel Management SaaS</text>
+  <text x="40" y="442" fill="#f59e0b" font-size="12" font-family="sans-serif">Python · Django · Multi-tenant · REST APIs · PostgreSQL</text>
+  <rect x="650" y="400" width="110" height="24" rx="4" fill="#f59e0b" opacity="0.2"/>
+  <text x="705" y="416" text-anchor="middle" fill="#f59e0b" font-size="11" font-family="sans-serif">PoC v0.1.0</text>
+</svg>

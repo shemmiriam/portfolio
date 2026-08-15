@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#08111a"/>
+      <stop offset="100%" style="stop-color:#0d1f2d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Child outline (simple figure) -->
+  <circle cx="400" cy="100" r="38" fill="none" stroke="#60a5fa" stroke-width="2.5" opacity="0.85"/>
+  <line x1="400" y1="138" x2="400" y2="230" stroke="#60a5fa" stroke-width="2.5" opacity="0.85"/>
+  <line x1="400" y1="165" x2="355" y2="200" stroke="#60a5fa" stroke-width="2.5" opacity="0.85"/>
+  <line x1="400" y1="165" x2="445" y2="200" stroke="#60a5fa" stroke-width="2.5" opacity="0.85"/>
+  <line x1="400" y1="230" x2="368" y2="290" stroke="#60a5fa" stroke-width="2.5" opacity="0.85"/>
+  <line x1="400" y1="230" x2="432" y2="290" stroke="#60a5fa" stroke-width="2.5" opacity="0.85"/>
+  <!-- Heart -->
+  <path d="M388 72 C388 65 396 60 400 67 C404 60 412 65 412 72 C412 80 400 90 400 90 C400 90 388 80 388 72Z" fill="#f87171" opacity="0.9"/>
+  <!-- Feedback bubbles -->
+  <rect x="150" y="130" width="160" height="60" rx="12" fill="rgba(96,165,250,0.12)" stroke="#60a5fa" stroke-width="1.5" opacity="0.8"/>
+  <text x="230" y="158" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="sans-serif">Location Mapping</text>
+  <text x="230" y="176" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="sans-serif">Codes → Human Names</text>
+  <rect x="490" y="130" width="160" height="60" rx="12" fill="rgba(96,165,250,0.12)" stroke="#60a5fa" stroke-width="1.5" opacity="0.8"/>
+  <text x="570" y="158" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="sans-serif">CPIMS Category</text>
+  <text x="570" y="176" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="sans-serif">Strict Validation</text>
+  <rect x="150" y="230" width="160" height="60" rx="12" fill="rgba(96,165,250,0.12)" stroke="#60a5fa" stroke-width="1.5" opacity="0.8"/>
+  <text x="230" y="258" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="sans-serif">Child Protection</text>
+  <text x="230" y="276" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="sans-serif">Bug Resolution</text>
+  <rect x="490" y="230" width="160" height="60" rx="12" fill="rgba(96,165,250,0.12)" stroke="#60a5fa" stroke-width="1.5" opacity="0.8"/>
+  <text x="570" y="258" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="sans-serif">OpenCHS Module</text>
+  <text x="570" y="276" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="sans-serif">Django · REST APIs</text>
+  <!-- Lines connecting to centre -->
+  <line x1="310" y1="160" x2="368" y2="148" stroke="#60a5fa" stroke-width="1" opacity="0.3"/>
+  <line x1="490" y1="160" x2="432" y2="148" stroke="#60a5fa" stroke-width="1" opacity="0.3"/>
+  <line x1="310" y1="260" x2="372" y2="240" stroke="#60a5fa" stroke-width="1" opacity="0.3"/>
+  <line x1="490" y1="260" x2="428" y2="240" stroke="#60a5fa" stroke-width="1" opacity="0.3"/>
+  <!-- Footer -->
+  <rect x="0" y="390" width="800" height="60" fill="#08111a" opacity="0.92"/>
+  <text x="40" y="420" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">OpenCHS Child-Friendly Feedback System</text>
+  <text x="40" y="441" fill="#60a5fa" font-size="12" font-family="sans-serif">Django · Python · CPIMS · REST APIs · Child Protection</text>
+  <rect x="640" y="400" width="120" height="24" rx="4" fill="#60a5fa" opacity="0.15"/>
+  <text x="700" y="416" text-anchor="middle" fill="#60a5fa" font-size="11" font-family="sans-serif">Production</text>
+</svg>

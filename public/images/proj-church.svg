@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-church" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#12001f"/>
+      <stop offset="100%" style="stop-color:#1a0030"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-church)"/>
+  <!-- App chrome -->
+  <rect x="75" y="65" width="630" height="300" rx="10" fill="#18003a" stroke="#c084fc" stroke-width="1.2" opacity="0.85"/>
+  <!-- Navbar -->
+  <rect x="75" y="65" width="630" height="44" rx="10" fill="#c084fc" opacity="0.1"/>
+  <text x="105" y="92" fill="#c084fc" font-size="15" font-weight="bold" font-family="sans-serif">✦ GraceConnect</text>
+  <text x="410" y="92" fill="#d8b4fe" font-size="12" font-family="sans-serif" opacity="0.75">Live</text>
+  <text x="460" y="92" fill="#d8b4fe" font-size="12" font-family="sans-serif" opacity="0.75">Sermons</text>
+  <text x="535" y="92" fill="#d8b4fe" font-size="12" font-family="sans-serif" opacity="0.75">Events</text>
+  <text x="595" y="92" fill="#d8b4fe" font-size="12" font-family="sans-serif" opacity="0.75">Give</text>
+  <!-- Hero card - Live service -->
+  <rect x="95" y="125" width="380" height="120" rx="7" fill="#220040" stroke="#c084fc" stroke-width="1" opacity="0.7"/>
+  <rect x="95" y="125" width="380" height="30" rx="7" fill="#c084fc" opacity="0.08"/>
+  <text x="105" y="145" fill="#c084fc" font-size="10" font-family="sans-serif" opacity="0.7">● LIVE NOW</text>
+  <text x="290" y="176" text-anchor="middle" fill="white" font-size="17" font-weight="bold" font-family="sans-serif">Sunday Service</text>
+  <text x="290" y="198" text-anchor="middle" fill="#c084fc" font-size="11" font-family="sans-serif">1,240 watching · 9:00 AM EAT</text>
+  <rect x="205" y="215" width="170" height="28" rx="6" fill="#c084fc" opacity="0.85"/>
+  <text x="290" y="233" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="sans-serif">Watch Live</text>
+  <!-- Right panel - feature cards -->
+  <rect x="495" y="125" width="190" height="55" rx="6" fill="#220040" stroke="#c084fc" stroke-width="1" opacity="0.55"/>
+  <text x="590" y="148" text-anchor="middle" fill="#c084fc" font-size="12" font-family="sans-serif">Digital Giving</text>
+  <text x="590" y="166" text-anchor="middle" fill="white" font-size="10" font-family="sans-serif" opacity="0.6">M-Pesa · Card · Bank</text>
+  <rect x="495" y="192" width="190" height="55" rx="6" fill="#220040" stroke="#c084fc" stroke-width="1" opacity="0.55"/>
+  <text x="590" y="215" text-anchor="middle" fill="#c084fc" font-size="12" font-family="sans-serif">Upcoming Events</text>
+  <text x="590" y="233" text-anchor="middle" fill="white" font-size="10" font-family="sans-serif" opacity="0.6">3 this week</text>
+  <!-- Sermon row -->
+  <rect x="95" y="263" width="590" height="88" rx="6" fill="#220040" stroke="#c084fc" stroke-width="1" opacity="0.4"/>
+  <text x="115" y="287" fill="#c084fc" font-size="11" font-family="sans-serif" font-weight="bold">Recent Sermons</text>
+  <text x="115" y="308" fill="white" font-size="11" font-family="sans-serif" opacity="0.65">Faith &amp; Purpose · Pastor James · Aug 2026</text>
+  <text x="115" y="328" fill="white" font-size="11" font-family="sans-serif" opacity="0.45">Walking in Purpose · Pastor Amara · Jul 2026</text>
+  <text x="115" y="345" fill="white" font-size="11" font-family="sans-serif" opacity="0.3">The Promise · Pastor Ruth · Jun 2026</text>
+  <!-- Footer -->
+  <rect x="0" y="390" width="800" height="60" fill="#0d0018" opacity="0.96"/>
+  <text x="40" y="418" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">Church SaaS Platform</text>
+  <text x="40" y="440" fill="#c084fc" font-size="12" font-family="sans-serif">TypeScript · React · Livestream · Digital Giving · Church Management</text>
+  <rect x="640" y="400" width="120" height="24" rx="4" fill="#c084fc" opacity="0.18"/>
+  <text x="700" y="416" text-anchor="middle" fill="#c084fc" font-size="11" font-family="sans-serif">In Development</text>
+</svg>

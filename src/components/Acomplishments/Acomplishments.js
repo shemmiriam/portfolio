@@ -1,23 +1,16 @@
 import React from 'react';
-
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
-
-const data = [
-  { number: 20, text: 'Open Source Projects' },
-  { number: 50, text: 'Shell Scripts', },
-  { number: 250000, text: 'Downloads', },
-  { number: 150, text: 'Github Stars', }
-];
+import { accomplishments } from '../../constants/constants';
 
 const Acomplishments = () => (
   <Section>
-    <SectionTitle>Personal Achievements</SectionTitle>
+    <SectionTitle>By the Numbers</SectionTitle>
     <Boxes>
-      {data.map((card, index) => (
+      {accomplishments.map((item, index) => (
         <Box key={index}>
-          <BoxNum>{`${card.number.toLocaleString('en-IN')}+`}</BoxNum>
-          <BoxText>{card.text}</BoxText>
+          <BoxNum>{`${item.number.toLocaleString()}+`}</BoxNum>
+          <BoxText>{item.text}</BoxText>
         </Box>
       ))}
     </Boxes>

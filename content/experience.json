@@ -1,0 +1,38 @@
+{
+  "experience": [
+    {
+      "id": 0,
+      "role": "Software Engineer",
+      "company": "BITZ IT Consulting Ltd.",
+      "location": "Nairobi, Kenya",
+      "period": "2025 — Present",
+      "description": "Building and maintaining OpenCHS, an AI-powered open-source helpline and case management platform deployed across East Africa. Working across AI integration, backend engineering, system integrations with government and institutional stakeholders, production deployments, and product documentation.",
+      "highlights": [
+        "Built production containerized AI pipeline (FastAPI, Celery, Redis, Docker, Whisper Large V3, spaCy) for audio → transcription → translation → NLP analysis for child protection organizations",
+        "AI-powered Enterprise Knowledge Management System (government energy sector) — 14+ commits across API caching, search optimisation, and integration testing",
+        "Travel Management SaaS: multi-tenant corporate travel platform — 18+ commits across employee management, donor modules, GL account mapping, and bulk onboarding",
+        "Azui Billing: enterprise billing system (Java/Spring Boot) — 16+ commits on customer portal auth, DTO APIs, and database integrity",
+        "AI R&D (openchs_rnd): audio preprocessing pipeline and summarization evaluation scripts for Whisper-based transcription",
+        "OpenCHS integrations: Uganda MGLSD, Kenya CPIMS, WhatsApp, SMS — deployed in Tanzania, Uganda, Kenya, Lesotho, Somalia",
+        "Clients/stakeholders: UNICEF Tanzania, UNICEF Kenya, Uganda MGLSD, C-Sema, CPIMS Kenya"
+      ],
+      "tags": ["Python", "FastAPI", "Django", "Java", "Spring Boot", "Vue 3", "TypeScript", "Celery", "Redis", "Docker", "Whisper", "NLP", "REST APIs", "PostgreSQL"]
+    },
+    {
+      "id": 1,
+      "role": "Software Engineer (Intern → Full-time)",
+      "company": "Ruel Software",
+      "location": "Kenya",
+      "period": "2023 — 2024",
+      "description": "Joined as Software Support & Implementation Specialist Intern, supporting Ruel Enterprise ERP implementation and onboarding across 700+ client organizations in 8 sectors. Progressed to full-time Software Engineer, taking on enterprise integration and compliance work.",
+      "highlights": [
+        "Started as Software Support & Implementation Specialist Intern — hands-on ERP deployment and client onboarding",
+        "Progressed to full-time Software Engineer within the same engagement",
+        "KRA eTIMS integration for Kenya Revenue Authority tax compliance across 700+ enterprise clients",
+        "Technical support and troubleshooting across 8 industry sectors",
+        "Business process documentation and client training"
+      ],
+      "tags": ["ERP Systems", "Enterprise Software", "REST APIs", "SQL", "Technical Support", "Integration"]
+    }
+  ]
+}

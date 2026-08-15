@@ -32,16 +32,16 @@ export default class MyDocument extends Document {
       <Html lang='en-GB'>
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-          <meta name="title" content="Vipul Jha - Android & Flutter Dev" />
-          <meta name="description" content="Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts." />
+          <meta name="title" content="Miriam Shem — Software Engineer | AI Solutions | Digital Public Infrastructure" />
+          <meta name="description" content="Software Engineer with 3+ years of experience in AI solutions, systems integration, and Digital Public Infrastructure across East Africa. BITZ IT Consulting Ltd." />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Vipul Jha - Android & Flutter Dev" />
-          <meta property="og:description" content="Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts." />
-          <meta property="og:image" content="https://www.vipuljha.com/images/banner.png" />
+          <meta property="og:title" content="Miriam Shem — Software Engineer | AI Solutions | Digital Public Infrastructure" />
+          <meta property="og:description" content="Software Engineer with 3+ years of experience in AI solutions, systems integration, and Digital Public Infrastructure across East Africa." />
+          <meta property="og:image" content="/images/banner.png" />
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:title" content="Vipul Jha - Android & Flutter Dev" />
-          <meta property="twitter:description" content="Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts." />
-          <meta property="twitter:image" content="https://www.vipuljha.com/images/banner.png" />
+          <meta property="twitter:title" content="Miriam Shem — Software Engineer | AI Solutions | Digital Public Infrastructure" />
+          <meta property="twitter:description" content="Software Engineer with 3+ years of experience in AI solutions, systems integration, and Digital Public Infrastructure across East Africa." />
+          <meta property="twitter:image" content="/images/banner.png" />
         </Head>
         <body>
           <Main />
