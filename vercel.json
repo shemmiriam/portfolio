@@ -3,5 +3,10 @@
   "framework": null,
   "buildCommand": "npm run build:static",
   "outputDirectory": "out",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "build": {
+    "env": {
+      "NODE_OPTIONS": "--openssl-legacy-provider"
+    }
+  }
 }
