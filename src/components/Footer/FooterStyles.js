@@ -70,4 +70,3 @@ export const Slogan = styled.p`
 		min-width: 100px;
 	}
 `
-
