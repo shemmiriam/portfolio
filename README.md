@@ -1,57 +1,55 @@
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](LICENSE)
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/lordarcadius/portfolio/blob/master/LICENSE)
+# Miriam Shem — Portfolio
 
-  
-# Personal Portfolio
+Personal portfolio site for Miriam Shem, Software Engineer. Built with Next.js and styled-components, with all content (projects, experience, certifications, skills, timeline) managed through a CMS rather than hardcoded — updating the site doesn't require touching code.
 
-A portfolio built in React and NextJS. Simple, clean and fast.
+**Live site:** [portfolio-shemmiriam.vercel.app](https://portfolio-shemmiriam.vercel.app)
 
-**Note: The logo and banner used in the project are my intellectual property. Please refrain from using it anywhere.**
+## Tech stack
 
+- [Next.js 10](https://nextjs.org/) (static export) + React
+- [styled-components](https://styled-components.com/) for styling
+- [Decap CMS](https://decapcms.org/) for content management, backed by JSON files in `/content`
+- Deployed on [Vercel](https://vercel.com/), auto-deploying from `main`
 
-
-![App Screenshot](https://i.ibb.co/jRRNMkH/Screenshot-from-2021-10-27-18-45-14.png)
-
-  
-## Demo
-
-[Portfolio](https://github.com/shemmiriam/portfolio)
-
-## Run Project 
-
-Run this project with Yarn
-
-```bash 
-  yarn && yarn run dev
-```
-    
-## Deployment
-
-To deploy this project run
+## Getting started
 
 ```bash
-  yarn build
+yarn && yarn dev
 ```
 
-  
-## Contributing
+Requires Node 18–20. The site runs at `http://localhost:3000`.
 
-Contributions are always welcome!
+## Content management
 
-Fork repo, make changes, test, create a pull request.
+All site content — projects, work experience, certifications, skills, timeline, and personal info — lives in `/content/*.json` and can be edited two ways:
 
-Please make sure to maintain `authorship`.
+- **Directly**, by editing the JSON files in `/content`.
+- **Through the CMS UI** at `/admin`, which provides a form-based editor for each content type.
 
-  
-## Credits
+### Editing locally
 
-- [@adrianhajdin](https://github.com/adrianhajdin) (The original author)
-- [@lordarcadius](https://github.com/lordarcadius) (I just fixed and modified few things)
-- [@dhruvsaxena1998](https://github.com/dhruvsaxena1998) (For help and PR)
+The CMS can run entirely offline against your local files — no login required:
 
-  
+1. Make sure `local_backend: true` is set in `public/admin/config.yml` (it is, by default).
+2. Run the local CMS proxy in a separate terminal: `npx decap-server`
+3. With the dev server also running, open `http://localhost:3000/admin/index.html`.
+
+Changes made through the CMS write directly to your local `/content` files — review and commit them like any other change.
+
+### Editing on production
+
+The live CMS at `/admin` authenticates through Netlify Identity + Git Gateway, which commits changes straight to `main` (triggering a redeploy on Vercel). This requires a Netlify site connected to this repo with Identity and Git Gateway enabled — see `public/admin/config.yml` for the backend configuration.
+
+## Deployment
+
+Pushes to `main` auto-deploy to Vercel. To build a static export manually:
+
+```bash
+yarn build:static
+```
+
 ## License
 
-[MIT](https://github.com/lordarcadius/portfolio/blob/master/LICENSE)
-
-  
+[MIT](LICENSE) — originally based on a portfolio template by Vipul Jha and Adrian Hajdin.
