@@ -6,53 +6,23 @@ export const FooterWrapper = styled.section`
   padding: 2rem 48px 40px;
   margin: 1rem auto;
   box-sizing: content-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 
 
   @media ${props => props.theme.breakpoints.sm} {
-    padding: 0 16px 48px;
+    padding: 2rem 16px 48px;
     width: calc(100vw - 32px);
   }
-`
-
-export const LinkItem = styled.a`
-	font-size: 18px;
-	line-height: 30px;
-	color: rgba(255, 255, 255, 0.75);
-	margin-bottom: 16px;
-	transition: .3s ease;
-	position: relative;
-	left: 0;
-	word-break: break-word;
-	overflow-wrap: anywhere;
-
-	&:hover {
-		color: #fff;
-		left: 6px;
-	}
-
-	@media ${props => props.theme.breakpoints.md} {
-		font-size: 17px;
-		line-height: 28px;
-		display: flex;
-	}
-
-	@media ${props => props.theme.breakpoints.sm} {
-		font-size: 15px;
-		line-height: 14px;
-		margin-bottom: 8px;
-		display: flex;
-		align-items: center;
-	}
 `
 
 export const SocialIconsContainer = styled.div`
 max-width: 1040px;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 
 @media ${props => props.theme.breakpoints.md}{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 @media ${props => props.theme.breakpoints.sm}{
@@ -64,20 +34,18 @@ justify-content: space-between;
 
 export const CompanyContainer = styled.div`
   display: flex;
-	align-items:baseline;
+	align-items: baseline;
 	flex-wrap: wrap;
-	margin-right: auto;
-	
+	justify-content: center;
 
 	@media ${props => props.theme.breakpoints.md}{
 		flex-direction: column;
-		align-items: baseline;
+		align-items: center;
 	}
 
 	@media ${props => props.theme.breakpoints.sm}{
 		display: flex;
 		flex-direction: column;
-		margin: 0 0 32px;
 		align-items: center;
 	}
 `
@@ -100,64 +68,5 @@ export const Slogan = styled.p`
 		line-height: 22px;
 		font-size: 15px;
 		min-width: 100px;
-	}
-`
-
-export const SocialContainer = styled.div`
-	display: flex;
-  align-items: center;
-
-	@media ${props => props.theme.breakpoints.md}{
-		justify-content: center;
-		padding-right: 16px;
-		flex-wrap: wrap;
-	}
-`
-
-
-export const LinkList = styled.ul`
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-  display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	gap: 40px;
-  padding: 40px 0 28px;
-
-	@media ${props => props.theme.breakpoints.lg} {
-		padding: 32px 0 16px;
-	}
-
-	@media ${props => props.theme.breakpoints.md} {
-		width: 100%;
-		padding: 32px 0 16px;
-		gap: 16px;
-	}
-	@media ${props => props.theme.breakpoints.sm} {
-		grid-template-columns: 1fr;
-		width: 100%;
-		padding: 32px 4px 16px;
-		gap: 20px;
-	}
-`
-
-export const LinkColumn = styled.div`
-	display: flex;
-	flex-direction: column;
-	max-width: 100%;
-	width: 100%;
-	min-width: 0;
-`
-export const LinkTitle = styled.h4`
-	font-style: normal;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 24px;
-	text-transform: uppercase;
-	color: rgba(255, 255, 255, 0.4);
-	margin-bottom: 16px;
-
-	@media ${props => props.theme.breakpoints.sm} {
-		font-size: 10px;
-		line-height: 12px;
-		margin-bottom: 8px;
 	}
 `

@@ -9,20 +9,17 @@ const Hero = () => (
     <HeroWrapper>
       <ProfileSide>
         <AvatarRing>
-          <AvatarImg src="/images/miriam-profile.png" alt={personalInfo.name} />
+          <AvatarImg src="/images/miriam-profile.jpg" alt={`${personalInfo.name}, ${personalInfo.title}`} />
         </AvatarRing>
       </ProfileSide>
       <TextSide>
-        <SectionTitle main>
+        <SectionTitle as="h1" main style={{ paddingTop: '12px' }}>
           {heroData.greeting}
         </SectionTitle>
         <SectionText>
           {heroData.description}
         </SectionText>
-        <Button onClick={(e) => {
-          e.preventDefault();
-          window.location.href = '/cv';
-        }}>
+        <Button href={personalInfo.resumeUrl} download>
           {heroData.ctaSecondary}
         </Button>
       </TextSide>

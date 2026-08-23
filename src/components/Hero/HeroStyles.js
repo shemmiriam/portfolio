@@ -22,7 +22,7 @@ export const HeroWrapper = styled.div`
   align-items: center;
   gap: 3.5rem;
   width: 100%;
-  padding: 1.5rem 0;
+  padding: 0.5rem 0 1.5rem;
   @media ${(props) => props.theme.breakpoints.md} {
     gap: 2rem;
   }
@@ -30,7 +30,7 @@ export const HeroWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 1rem 0;
+    padding: 0.5rem 0 1rem;
   }
 `;
 
