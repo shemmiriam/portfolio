@@ -180,10 +180,10 @@ export default function CV() {
         <meta name="description" content={`Resume of ${personalInfo.name} — ${personalInfo.title}. Download the full PDF resume or view work experience, skills, certifications, and key projects.`} />
         <meta property="og:title" content={`CV — ${personalInfo.name}`} />
         <meta property="og:description" content={`Resume of ${personalInfo.name} — ${personalInfo.title}.`} />
-        <meta property="og:url" content="https://portfolio-shemmmiriam.vercel.app/cv" />
+        <meta property="og:url" content="https://portfolio-shemmiriam.vercel.app/cv" />
         <meta property="twitter:title" content={`CV — ${personalInfo.name}`} />
         <meta property="twitter:description" content={`Resume of ${personalInfo.name} — ${personalInfo.title}.`} />
-        <link key="canonical" rel="canonical" href="https://portfolio-shemmmiriam.vercel.app/cv" />
+        <link key="canonical" rel="canonical" href="https://portfolio-shemmiriam.vercel.app/cv" />
       </Head>
       <PrintStyle />
       <Page>
