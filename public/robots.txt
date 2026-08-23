@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin
 
-Sitemap: https://portfolio-shemmmiriam.vercel.app/sitemap.xml
+Sitemap: https://portfolio-shemmiriam.vercel.app/sitemap.xml
