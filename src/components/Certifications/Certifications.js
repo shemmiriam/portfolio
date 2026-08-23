@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Section, SectionDivider, SectionTitle, SectionText } from '../../styles/GlobalComponents';
+import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { certifications } from '../../constants/constants';
 
 const CertGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 `;
@@ -66,10 +66,8 @@ const Tag = styled.span`
 
 const Certifications = () => (
   <Section id="certifications">
-    <SectionTitle>Certifications & Learning</SectionTitle>
-    <SectionText>
-      A living record of completed certifications and ongoing professional development. Updated as I learn.
-    </SectionText>
+    <SectionDivider centered />
+    <SectionTitle>Certifications</SectionTitle>
     <CertGrid>
       {certifications.map((cert) => (
         <CertCard key={cert.id} status={cert.status}>
@@ -83,7 +81,6 @@ const Certifications = () => (
         </CertCard>
       ))}
     </CertGrid>
-    <SectionDivider />
   </Section>
 );
 

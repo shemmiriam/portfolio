@@ -8,7 +8,13 @@ const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: 'flex', alignItems: 'center', color: "white" }}>
+        <a
+          style={{ display: 'flex', alignItems: 'center', color: "white" }}
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        >
           <span style={{ marginLeft: 10, marginTop: 7, fontSize: 20 }}>{personalInfo.name}</span>
         </a>
       </Link>

@@ -6,7 +6,7 @@ import { projects } from '../../constants/constants';
 
 const Projects = () => (
   <Section id="projects">
-    <SectionDivider />
+    <SectionDivider centered />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
       {projects.map((p, i) => {
@@ -30,7 +30,7 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              {p.visit && p.visit !== '#' && (
+              {p.visit && p.visit !== '#' && p.visit !== p.source && (
                 <ExternalLinks href={p.visit} target="_blank" rel="noopener noreferrer">Live Preview</ExternalLinks>
               )}
               {p.source && p.source !== '#' ? (

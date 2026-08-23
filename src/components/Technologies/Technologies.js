@@ -1,15 +1,12 @@
 import React from "react";
-import { Section, SectionDivider, SectionText, SectionTitle, } from "../../styles/GlobalComponents";
+import { Section, SectionDivider, SectionTitle, } from "../../styles/GlobalComponents";
 import { List, ListContainer, ListItem, ListParagraph, ListTitle, } from "./TechnologiesStyles";
 import { Skills } from './Skills'
 
 const Technologies = () => (
   <Section id="skills">
-    <SectionDivider divider />
+    <SectionDivider centered />
     <SectionTitle>Skills</SectionTitle>
-    <SectionText>
-      I've worked with multiple technologies as a developer to develop & maintain my projects.
-    </SectionText>
     <List>
       {Skills.map((Skill) => (
         <ListItem key={Skill.slug}>
@@ -25,7 +22,6 @@ const Technologies = () => (
         </ListItem>
       ))}
     </List>
-    <SectionDivider colorAlt />
   </Section>
 );
 

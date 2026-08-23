@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Section, SectionDivider, SectionTitle, SectionText } from '../../styles/GlobalComponents';
+import { Section, SectionDivider, SectionTitle, SecondaryBtn } from '../../styles/GlobalComponents';
 import { experience } from '../../constants/constants';
 
 const ExperienceCard = styled.div`
@@ -73,10 +73,8 @@ const Tag = styled.span`
 
 const Experience = () => (
   <Section id="experience">
+    <SectionDivider centered colorAlt />
     <SectionTitle>Experience</SectionTitle>
-    <SectionText>
-      Professional journey across software engineering, enterprise systems, AI solutions, and Digital Public Infrastructure.
-    </SectionText>
     {experience.map((job) => (
       <ExperienceCard key={job.id}>
         <RoleTitle>{job.role}</RoleTitle>
@@ -95,7 +93,9 @@ const Experience = () => (
         </TagRow>
       </ExperienceCard>
     ))}
-    <SectionDivider />
+    <SecondaryBtn as="a" href="/cv" style={{ alignSelf: 'center' }}>
+      View Full Experience on CV
+    </SecondaryBtn>
   </Section>
 );
 

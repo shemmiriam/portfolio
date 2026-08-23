@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 0,
-      "title": "AI Pipeline Container — Multi-Modal Audio Processing System",
+      "title": "AI Pipeline Container: Multi-Modal Audio Processing System",
       "description": "Production-ready, containerized AI pipeline for processing audio recordings into structured insights. Built for child protection organizations to transform call recordings into actionable case analysis. Full pipeline: audio → transcription → translation → NLP analysis → structured output. GPU-accelerated with Celery task queuing and real-time status updates.",
       "image": "/images/proj-ai-pipeline.svg",
       "tags": ["Python", "FastAPI", "Celery", "Redis", "Docker", "Whisper Large V3", "Swahili Translation", "NER", "spaCy", "PyTorch", "GPU"],
@@ -54,7 +54,7 @@
     },
     {
       "id": 4,
-      "title": "OpenCHS — AI-Powered Case Management Platform",
+      "title": "OpenCHS: AI-Powered Case Management Platform",
       "description": "Contributed to OpenCHS, an open-source AI-enabled helpline and case management platform serving child protection organizations across East Africa. Work spanned AI integration, backend development, government system integrations, and production deployments in 5 countries.",
       "image": "/images/proj-openchs.svg",
       "tags": ["Python", "Django", "Vue 3", "AI/ML", "REST APIs", "WhatsApp", "SMS", "Whisper", "NLLB", "FLAN-T5"],
@@ -119,7 +119,7 @@
     },
     {
       "id": 9,
-      "title": "NorthStar AI — Career Companion",
+      "title": "NorthStar AI: Career Companion",
       "description": "Personal AI product — an AI-powered career companion for personalized career guidance and intelligent job applications. Collects career history, understands job descriptions, tailors application content, and tracks professional journey.",
       "image": "/images/proj-northstar.svg",
       "tags": ["AI", "Python", "Career Tech", "LLM", "Product"],
@@ -145,7 +145,7 @@
     },
     {
       "id": 11,
-      "title": "CPIMS OVC 3.0 — Django & Python Upgrade",
+      "title": "CPIMS OVC 3.0: Django & Python Upgrade",
       "description": "Contributed to the migration of the CPIMS codebase from Python 2.7 / Django 1.8 to Python 3.10 / Django 4.0.2, modernizing the platform underpinning Kenya's national child protection registry.",
       "image": "/images/proj-cpims.svg",
       "tags": ["Python", "Django", "Migration", "CPIMS"],

@@ -1,11 +1,10 @@
 import React from 'react';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import { Section } from '../../styles/GlobalComponents';
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
 import { accomplishments } from '../../constants/constants';
 
 const Acomplishments = () => (
-  <Section>
-    <SectionTitle>By the Numbers</SectionTitle>
+  <Section style={{ paddingTop: 0 }}>
     <Boxes>
       {accomplishments.map((item, index) => (
         <Box key={index}>
@@ -14,7 +13,6 @@ const Acomplishments = () => (
         </Box>
       ))}
     </Boxes>
-    <SectionDivider />
   </Section>
 );
 

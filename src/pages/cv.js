@@ -177,11 +177,19 @@ export default function CV() {
     <>
       <Head>
         <title>CV — {personalInfo.name}</title>
+        <meta name="description" content={`Resume of ${personalInfo.name} — ${personalInfo.title}. Download the full PDF resume or view work experience, skills, certifications, and key projects.`} />
+        <meta property="og:title" content={`CV — ${personalInfo.name}`} />
+        <meta property="og:description" content={`Resume of ${personalInfo.name} — ${personalInfo.title}.`} />
+        <meta property="og:url" content="https://portfolio-shemmmiriam.vercel.app/cv" />
+        <meta property="twitter:title" content={`CV — ${personalInfo.name}`} />
+        <meta property="twitter:description" content={`Resume of ${personalInfo.name} — ${personalInfo.title}.`} />
+        <link key="canonical" rel="canonical" href="https://portfolio-shemmmiriam.vercel.app/cv" />
       </Head>
       <PrintStyle />
       <Page>
         <PrintBar className="no-print">
           <Btn onClick={() => window.history.back()}>← Back to Portfolio</Btn>
+          <Btn as="a" href={personalInfo.resumeUrl} download>Download PDF</Btn>
           <Btn primary onClick={() => window.print()}>Print / Save as PDF</Btn>
         </PrintBar>
 
