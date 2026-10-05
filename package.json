@@ -19,7 +19,7 @@
     "styled-normalize": "^8.0.7"
   },
   "engines": {
-    "node": ">=18.0.0 <21.0.0"
+    "node": "24.x"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.13.3",
