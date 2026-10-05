@@ -19,6 +19,7 @@ export const personalInfo = {
   tagline: personalData.tagline,
   location: personalData.location,
   email: personalData.email,
+  phone: personalData.phone,
   github: personalData.github,
   linkedin: personalData.linkedin,
   instagram: personalData.instagram,

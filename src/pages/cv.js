@@ -199,6 +199,7 @@ export default function CV() {
         <ContactRow>
           <span>{personalInfo.location}</span>
           <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
+          <a href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`}>{personalInfo.phone}</a>
           <a href={personalInfo.github} target="_blank" rel="noopener noreferrer">github.com/shemmiriam</a>
           <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer">linkedin.com/in/miriam-shem</a>
         </ContactRow>
