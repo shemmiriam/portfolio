@@ -115,7 +115,31 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 `;
 
 
-// Social Icons 
+// Phone Number
+
+export const PhoneLink = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 8px;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.4rem;
+  white-space: nowrap;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: #fff;
+    background-color: #212d45;
+    cursor: pointer;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1.1rem;
+  }
+`;
+
+// Social Icons
 
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
