@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillPhone } from 'react-icons/ai';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 import { personalInfo, navLinks } from '../../constants/constants';
 
@@ -29,6 +29,9 @@ const Header = () => (
       ))}
     </Div2>
     <Div3>
+      <SocialIcons href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`} title={personalInfo.phone}>
+        <AiFillPhone size="3rem" />
+      </SocialIcons>
       <SocialIcons href={personalInfo.github} target="_blank" rel="noopener noreferrer">
         <AiFillGithub size="3rem" />
       </SocialIcons>
