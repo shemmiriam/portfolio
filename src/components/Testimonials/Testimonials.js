@@ -38,6 +38,7 @@ const Quote = styled.blockquote`
   line-height: 1.7;
   color: #ddd;
   &::before { content: '\\201C'; color: ${({ theme }) => theme.colors.link}; font-size: 3rem; line-height: 0; margin-right: 0.3rem; vertical-align: -0.9rem; }
+  &::after { content: '\\201D'; color: ${({ theme }) => theme.colors.link}; font-size: 3rem; line-height: 0; margin-left: 0.2rem; vertical-align: -0.9rem; }
 `;
 
 const Who = styled.figcaption`
