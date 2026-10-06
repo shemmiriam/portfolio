@@ -2,6 +2,7 @@ import React from "react";
 import { Section, SectionDivider, SectionTitle, } from "../../styles/GlobalComponents";
 import { List, ListContainer, ListItem, ListParagraph, ListTitle, } from "./TechnologiesStyles";
 import { Skills } from './Skills'
+import GitHubLanguages from '../GitHubLanguages/GitHubLanguages'
 
 const Technologies = () => (
   <Section id="skills">
@@ -22,6 +23,7 @@ const Technologies = () => (
         </ListItem>
       ))}
     </List>
+    <GitHubLanguages />
   </Section>
 );
 
