@@ -1,5 +1,6 @@
 import React from 'react';
-import { Section, SectionText, SectionTitle, SecondaryBtn } from '../../styles/GlobalComponents';
+import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import Button from '../../styles/GlobalComponents/Button';
 import { HeroWrapper, ProfileSide, AvatarRing, AvatarImg, TextSide } from './HeroStyles';
 import { heroData, personalInfo } from '../../constants/constants';
 
@@ -18,14 +19,9 @@ const Hero = () => (
         <SectionText>
           {heroData.description}
         </SectionText>
-        <SecondaryBtn
-          as="a"
-          href={personalInfo.resumeUrl}
-          download="Miriam-Shem-CV.pdf"
-          style={{ display: 'inline-block', marginBottom: 0 }}
-        >
+        <Button href={personalInfo.resumeUrl} download>
           {heroData.ctaSecondary}
-        </SecondaryBtn>
+        </Button>
       </TextSide>
     </HeroWrapper>
   </Section>

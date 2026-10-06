@@ -28,7 +28,8 @@ export const NavItem = styled.a`
   align-items: center;
   gap: 0.3rem;
   padding: 0.4rem 0;
-  font-size: 1.05rem;
+  font-size: 1rem;
+  letter-spacing: 0;
   color: ${({ $active, theme }) => ($active ? theme.colors.accent1 : 'rgba(255, 255, 255, 0.65)')};
   transition: color 0.2s ease;
   -webkit-tap-highlight-color: transparent;

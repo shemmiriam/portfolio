@@ -6,10 +6,13 @@ import BottomNav from '../components/BottomNav/BottomNav'
 import { Container } from './LayoutStyles'
 
 export const Layout = ({ children }) => {
-  // Always open at the hero unless the URL points at a section
+  // Always open at the hero; drop any stale #section left in the URL
   useEffect(() => {
     if ('scrollRestoration' in window.history) window.history.scrollRestoration = 'manual'
-    if (!window.location.hash) window.scrollTo(0, 0)
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search)
+    }
+    window.scrollTo(0, 0)
   }, [])
 
   return (

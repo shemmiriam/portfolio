@@ -43,6 +43,14 @@ const BottomNav = () => {
             href={link.href}
             $active={active === id}
             aria-current={active === id ? 'true' : undefined}
+            onClick={(e) => {
+              // Scroll without writing #hash into the URL, so reloads start at the top
+              const target = document.getElementById(id);
+              if (!target) return;
+              e.preventDefault();
+              target.scrollIntoView({ behavior: 'smooth' });
+              setActive(id);
+            }}
           >
             {Icon && <Icon size="2.2rem" aria-hidden="true" />}
             <span>{link.label}</span>
