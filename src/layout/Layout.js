@@ -2,6 +2,7 @@ import React from 'react'
 
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
+import BottomNav from '../components/BottomNav/BottomNav'
 import { Container } from './LayoutStyles'
 
 export const Layout = ({ children }) => {
@@ -10,6 +11,7 @@ export const Layout = ({ children }) => {
       <Header />
       <main>{children}</main>
       <Footer />
+      <BottomNav />
     </Container>
   )
 }
