@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-// Only rendered visually on phones; desktop keeps the header navigation.
+// Only rendered visually on phones and small tablets; desktop keeps the header navigation.
 export const Nav = styled.nav`
   display: none;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => props.theme.breakpoints.nav} {
     display: flex;
     position: fixed;
     left: 0;

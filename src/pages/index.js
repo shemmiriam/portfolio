@@ -43,11 +43,11 @@ const Home = () => {
       </Section>
       <Projects />
       <Experience />
-      <Testimonials />
       <Technologies />
       <Timeline />
       <Acomplishments />
       <Certifications />
+      <Testimonials />
     </Layout>
   );
 };

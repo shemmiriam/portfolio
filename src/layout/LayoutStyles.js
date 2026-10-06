@@ -5,7 +5,7 @@ max-width: 1280px;
 width: 100%;
 margin: auto;
 
-@media ${(props) => props.theme.breakpoints.sm} {
+@media ${(props) => props.theme.breakpoints.nav} {
   padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
 }
 `;

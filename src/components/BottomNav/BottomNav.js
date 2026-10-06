@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FiGrid, FiBriefcase, FiCpu, FiUser, FiAward } from 'react-icons/fi';
+import { FiGrid, FiBriefcase, FiCpu, FiUser, FiAward, FiMessageSquare } from 'react-icons/fi';
 import { navLinks } from '../../constants/constants';
 import { Nav, NavItem } from './BottomNavStyles';
 
@@ -9,7 +9,11 @@ const icons = {
   Skills: FiCpu,
   About: FiUser,
   Certifications: FiAward,
+  Reviews: FiMessageSquare,
 };
+
+// Shorter labels so six tabs fit on small phones
+const shortLabels = { Certifications: 'Certs' };
 
 const BottomNav = () => {
   const [active, setActive] = useState('');
@@ -41,6 +45,7 @@ const BottomNav = () => {
           <NavItem
             key={link.label}
             href={link.href}
+            aria-label={link.label}
             $active={active === id}
             aria-current={active === id ? 'true' : undefined}
             onClick={(e) => {
@@ -53,7 +58,7 @@ const BottomNav = () => {
             }}
           >
             {Icon && <Icon size="2.2rem" aria-hidden="true" />}
-            <span>{link.label}</span>
+            <span>{shortLabels[link.label] || link.label}</span>
           </NavItem>
         );
       })}
