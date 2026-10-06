@@ -1,5 +1,6 @@
 import crypto from 'crypto';
 import { getSql, ensureReviewsTable } from '../../lib/db';
+import { notifyNewReview } from '../../lib/mail';
 
 const clean = (v, max) => (typeof v === 'string' ? v.trim().replace(/\s+/g, ' ').slice(0, max) : '');
 
@@ -57,9 +58,12 @@ export default async function handler(req, res) {
         return res.status(429).json({ error: 'Too many submissions. Please try again later.' });
       }
 
-      await sql`
+      const [saved] = await sql`
         INSERT INTO reviews (name, role, company, message, linkedin, ip_hash)
-        VALUES (${name}, ${role}, ${company}, ${message}, ${linkedin}, ${ipHash})`;
+        VALUES (${name}, ${role}, ${company}, ${message}, ${linkedin}, ${ipHash})
+        RETURNING id`;
+      // Awaited: the function may be frozen once the response is sent
+      await notifyNewReview({ id: saved.id, name, role, company, message, linkedin });
       return res.status(201).json({ ok: true });
     }
 
