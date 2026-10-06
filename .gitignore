@@ -5,8 +5,8 @@
 /.pnp
 .pnp.js
 
-# use yarn.lock as the single source of truth; ignore npm's lockfile
-package-lock.json
+# npm is the package manager (package-lock.json is the lockfile); ignore yarn's
+yarn.lock
 
 # testing
 /coverage
