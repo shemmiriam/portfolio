@@ -20,7 +20,6 @@ const personJsonLd = {
   url: 'https://portfolio-shemmiriam.vercel.app/',
   image: 'https://portfolio-shemmiriam.vercel.app/images/miriam-profile.jpg',
   email: `mailto:${personalInfo.email}`,
-  telephone: personalInfo.phone,
   sameAs: [personalInfo.github, personalInfo.linkedin, personalInfo.instagram].filter(Boolean),
   address: {
     '@type': 'PostalAddress',

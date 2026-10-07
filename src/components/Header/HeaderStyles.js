@@ -26,7 +26,8 @@ export const Div1 = styled.div`
   flex-direction: row;
   align-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 1 / 2 / 4;
+    white-space: nowrap;
   }
 `;
 export const Div2 = styled.div`
@@ -72,30 +73,6 @@ export const NavLink = styled.a`
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
     font-size: 1.7rem;
-  }
-`;
-
-// Phone Number
-
-export const PhoneLink = styled.a`
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 8px;
-  border-radius: 50px;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 1.4rem;
-  white-space: nowrap;
-  transition: 0.3s ease;
-
-  &:hover {
-    color: #fff;
-    background-color: #212d45;
-    cursor: pointer;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 1.1rem;
   }
 `;
 

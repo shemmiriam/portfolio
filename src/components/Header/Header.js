@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin, AiFillPhone } from 'react-icons/ai';
-import { Container, Div1, Div2, Div3, NavLink, PhoneLink, SocialIcons } from './HeaderStyles';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 import { personalInfo, navLinks } from '../../constants/constants';
 
 const Header = () => (
@@ -29,10 +29,6 @@ const Header = () => (
       ))}
     </Div2>
     <Div3>
-      <PhoneLink href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`}>
-        <AiFillPhone size="1.6rem" />
-        {personalInfo.phone}
-      </PhoneLink>
       <SocialIcons href={personalInfo.github} target="_blank" rel="noopener noreferrer">
         <AiFillGithub size="3rem" />
       </SocialIcons>
