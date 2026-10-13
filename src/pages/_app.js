@@ -12,14 +12,14 @@ export default function App({ Component, pageProps }) {
         <meta property="og:locale" content="en_GB" />
         <meta property="og:title" content="Miriam Shem — Software Engineer | AI Solutions | Digital Public Infrastructure" />
         <meta property="og:description" content="Software Engineer with 3+ years of experience in AI solutions, systems integration, and Digital Public Infrastructure across East Africa." />
-        <meta property="og:image" content="https://portfolio-shemmiriam.vercel.app/images/banner.png" />
+        <meta property="og:image" content="https://portfolio-shemmiriam.vercel.app/images/banner.png?v=2" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://portfolio-shemmiriam.vercel.app/" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="Miriam Shem — Software Engineer | AI Solutions | Digital Public Infrastructure" />
         <meta property="twitter:description" content="Software Engineer with 3+ years of experience in AI solutions, systems integration, and Digital Public Infrastructure across East Africa." />
-        <meta property="twitter:image" content="https://portfolio-shemmiriam.vercel.app/images/banner.png" />
+        <meta property="twitter:image" content="https://portfolio-shemmiriam.vercel.app/images/banner.png?v=2" />
         <link key="canonical" rel="canonical" href="https://portfolio-shemmiriam.vercel.app/" />
       </Head>
       <Theme>
