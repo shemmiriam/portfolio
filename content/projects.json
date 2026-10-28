@@ -111,7 +111,7 @@
       "image": "/images/proj-church.svg",
       "tags": ["TypeScript", "React", "SaaS", "Church Management", "Digital Giving"],
       "source": "#",
-      "visit": "#",
+      "visit": "https://church-saas-template.vercel.app/",
       "category": "Personal Project",
       "status": "In Development",
       "organization": "Personal",
