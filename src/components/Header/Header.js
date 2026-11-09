@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 import { personalInfo, navLinks } from '../../constants/constants';
 
@@ -34,6 +34,9 @@ const Header = () => (
       </SocialIcons>
       <SocialIcons href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer">
         <AiFillLinkedin size="3rem" />
+      </SocialIcons>
+      <SocialIcons href={`mailto:${personalInfo.email}`} aria-label="Email">
+        <AiFillMail size="3rem" />
       </SocialIcons>
     </Div3>
   </Container>
