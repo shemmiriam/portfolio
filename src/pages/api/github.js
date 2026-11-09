@@ -12,15 +12,17 @@ export default async function handler(req, res) {
   try {
     const headers = { Accept: 'application/vnd.github+json', 'User-Agent': 'portfolio-site' };
     if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
-    const r = await fetch(
-      `https://api.github.com/users/${username}/repos?sort=pushed&direction=desc&per_page=40&type=owner`,
-      { headers }
-    );
+    // With a token the owner's private repos come back too; without one only public ones do
+    const url = process.env.GITHUB_TOKEN
+      ? 'https://api.github.com/user/repos?affiliation=owner&visibility=all&sort=pushed&direction=desc&per_page=100'
+      : `https://api.github.com/users/${username}/repos?sort=pushed&direction=desc&per_page=100&type=owner`;
+    const r = await fetch(url, { headers });
     if (!r.ok) throw new Error(`GitHub responded ${r.status}`);
     const data = await r.json();
-    const own = data.filter((x) => !x.fork && !x.archived && !x.private && !SKIP.has(x.name));
+    // Private repos count towards the language tally only; their names never leave this function
+    const own = data.filter((x) => !x.fork && !x.archived && !SKIP.has(x.name));
 
-    // Language tally across all of the user's own repos (not just the latest few)
+    // Language tally across all of the user's own repos, private included (not just the latest few)
     const counts = {};
     own.forEach((x) => {
       if (x.language) counts[x.language] = (counts[x.language] || 0) + 1;
@@ -33,7 +35,7 @@ export default async function handler(req, res) {
     const cutoff = new Date();
     cutoff.setMonth(cutoff.getMonth() - MAX_AGE_MONTHS);
     const repos = own
-      .filter((x) => new Date(x.pushed_at) >= cutoff)
+      .filter((x) => !x.private && new Date(x.pushed_at) >= cutoff)
       .slice(0, LIMIT)
       .map((x) => ({
         name: x.name,
