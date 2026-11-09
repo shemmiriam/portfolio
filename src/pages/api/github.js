@@ -4,6 +4,8 @@ const username = (personalInfo.github || '').split('github.com/')[1]?.split('/')
 const LIMIT = 6;
 // The site's own repo would just link back to itself
 const SKIP = new Set(['portfolio']);
+// "Latest" means recent: repos untouched for longer than this are left out of the strip
+const MAX_AGE_MONTHS = 6;
 
 export default async function handler(req, res) {
   if (!username) return res.status(200).json({ repos: [], languages: [] });
@@ -28,7 +30,10 @@ export default async function handler(req, res) {
       .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name))
       .slice(0, 8);
 
+    const cutoff = new Date();
+    cutoff.setMonth(cutoff.getMonth() - MAX_AGE_MONTHS);
     const repos = own
+      .filter((x) => new Date(x.pushed_at) >= cutoff)
       .slice(0, LIMIT)
       .map((x) => ({
         name: x.name,
