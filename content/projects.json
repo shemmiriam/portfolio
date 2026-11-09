@@ -92,19 +92,6 @@
       "highlight": false
     },
     {
-      "id": 7,
-      "title": "Digital Public Infrastructure (DPI) Initiative",
-      "description": "A broader Digital Public Infrastructure initiative spanning multiple interconnected platforms: D-HEIGHT (housing & settlements), D-Learn (education), D-Health (healthcare), D-Social (social services), and more. Each pillar is designed as a composable DPI layer covering housing, financial inclusion, WASH, marketplace, governance, citizen participation, and responsible AI. Currently in the research and design phase — implementation ahead.",
-      "image": "/images/proj-dheight.svg",
-      "tags": ["DPI", "D-HEIGHT", "D-Learn", "D-Health", "D-Social", "AI", "Housing", "Financial Inclusion", "WASH", "Governance"],
-      "source": "#",
-      "visit": "#",
-      "category": "Digital Public Infrastructure",
-      "status": "Research & Design",
-      "organization": "BITZ IT Consulting Ltd.",
-      "highlight": true
-    },
-    {
       "id": 8,
       "title": "Church SaaS Platform",
       "description": "Personal project — a SaaS platform for churches combining livestreaming, sermons, events, digital giving, and church management. Built UI features across navbar, events, sermons, live streaming, and giving modules.",
